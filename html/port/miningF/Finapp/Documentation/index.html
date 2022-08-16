@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+    <meta name="description" content="Documentation">
+    <meta name="keywords" content="documentation" />
+</head>
+
+<body>
+    <div class="capsule">
+
+        <!-- sidebar -->
+        <div class="sidebar">
+
+            <h1 class="sidebarTitle">Finapp</h1>
+            <h5 class="sidebarSubtitle">Documentation</h5>
+
+            <ul class="block">
+                <li class="title">Welcome</li>
+                <li><a href="#">Introduction</a></li>
+            </ul>
+
+            <ul class="block">
+                <li class="title">Getting Started</li>
+                <li><a href="#themefiles">Theme Files</a></li>
+                <li><a href="#includes">Includes</a></li>
+                <li><a href="#compile">Compiling Sass File</a></li>
+            </ul>
+
+            <ul class="block">
+                <li class="title">Editing</li>
+                <li><a href="#colors">Colors</a></li>
+                <li><a href="#font">Font</a></li>
+                <li><a href="#header">Header</a></li>
+                <li><a href="#bottommenu">Bottom Menu</a></li>
+            </ul>
+
+            <ul class="block">
+                <li class="title">Sources</li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#icons">Icons</a></li>
+                <li><a href="#fonts">Fonts</a></li>
+                <li><a href="#plugins">Plugins</a></li>
+            </ul>
+
+            <ul class="block">
+                <li class="title">Need Help?</li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+
+        </div>
+        <!-- * sidebar -->
+
+        <!-- main -->
+        <div class="main">
+
+            <section>
+                <h5 class="subtitle">Welcome</h5>
+                <h2 class="title">Introduction</h2>
+                <p>
+                    You don't need any introduction to use this theme. This is HTML, Css, Javascript template designed
+                    for mobile devices.
+                </p>
+            </section>
+
+            <div class="divider"></div>
+
+            <section id="themefiles">
+                <h5 class="subtitle">Getting Started</h5>
+                <h2 class="title">Theme Files</h2>
+                <h5 class="mt-4 mb-3">HTML Files</h5>
+                <ul>
+                    <li>
+                        <strong>app-xxxxx.html</strong> - app pages.
+                    </li>
+                    <li>
+                        <strong>component-xxxxx.html</strong> - component pages.
+                    </li>
+                </ul>
+                <h5 class="mt-4 mb-3">Css Files</h5>
+                <ul>
+                    <li>
+                        <strong>style.css</strong> - Css file (I do not recommend to edit styles on this file.
+                        Edit the sass files then compile.)
+                    </li>
+                    <li>
+                        <strong>src/</strong> - Plugins and Bootstrap css files.
+                    </li>
+                </ul>
+
+                <h5 class="mt-4 mb-3">Javascript Files</h5>
+                <ul>
+                    <li>
+                        <strong>base.js</strong> - Main javascript file.
+                    </li>
+                    <li>
+                        <strong>lib</strong>
+                        <ul>
+                            <li>
+                                <strong>jquery-3.4.1.min.js</strong> - Jquery 3.4.1
+                            </li>
+                            <li>
+                                <strong>bootstrap.min.js</strong> - Bootstrap.js
+                            </li>
+                            <li>
+                                <strong>popper.min.js</strong> - Popper.js
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>plugins</strong>
+                        <ul>
+                            <li>
+                                <strong>owl.carousel.min.js</strong> - Owl Carousel
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h5 class="mt-4 mb-3">Sass Files</h5>
+                <ul>
+                    <li>
+                        <strong>_body.scss</strong> - Body tag and some global settings
+                    </li>
+                    <li>
+                        <strong>_variables.scss</strong> - Colors
+                    </li>
+                    <li>
+                        <strong>_font.scss</strong> - Font settings
+                    </li>
+                    <li>
+                        <strong>_blocks.scss</strong> - Blocks
+                    </li>
+                    <li>
+                        <strong>style.scss</strong> - Style Sass and included all sass files.
+                    </li>
+                    <li>
+                        <strong>_ui.scss</strong> - UI Sass included all ui sass files.
+                    </li>
+                    <li>
+                        <strong>layout/</strong>
+                        <ul>
+                            <li>
+                                <strong>_header.scss</strong> - Header
+                            </li>
+                            <li>
+                                <strong>_bottomMenu.scss</strong> - Bottom menu
+                            </li>
+                            <li>
+                                <strong>_content.scss</strong> - Content
+                            </li>
+                            <li>
+                                <strong>_footer.scss</strong> - Footer
+                            </li>
+                            <li>
+                                <strong>_sidebar.scss</strong> - Sidebar / Sidemenu
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>ui/</strong>
+                        <ul>
+                            <li>
+                                <strong>All files in sass/ui/</strong> - These files are ui files
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="divider"></div>
+
+            <section id="includes">
+                <h5 class="subtitle">Getting Started</h5>
+                <h2 class="title">Includes</h2>
+                <p>
+                    <strong>Css Files</strong>
+                    <br>
+                    assets/css/style.css - All sass files compiled to this. This is the only css file theme using.
+                </p>
+                <p>
+                    <strong>Javascript Files</strong>
+                    <br>
+                    You can take a look javascript files bottom on index.html codes
+                </p>
+            </section>
+
+            <div class="divider"></div>
+
+            <section id="compile">
+                <h5 class="subtitle">Getting Started</h5>
+                <h2 class="title">Compiling Sass File</h2>
+                <p>
+
+                    After you edit sass files, just compile <b>style.scss</b> to <b>style.css</b>. No need others.
+                </p>
+                <h5 class="mt-5">First time on Sass?</h5>
+                <p>
+                    Learn more about sass : <a href="https://sass-lang.com/" target="_blank">Sass official website</a>.
+                </p>
+                <h5 class="mt-5">How to compile sass files for beginners?</h5>
+                <p>
+                    You can use apps to compile sass files to css files.<br>
+                    One of the best of them is Koala. It is free and open-source.<br>
+                    <a href="http://koala-app.com/" target="_blank">Koala App</a><br>
+                    Download the app and compile assets/sass/style.scss to assets/css/style.css. (You can edit the
+                    source map after compile)
+                </p>
+                <p>
+                    You can check the others apps for compile on applications section.
+                    <a href="https://sass-lang.com/install" target="_blank">https://sass-lang.com/install</a>
+                </p>
+            </section>
+
+            <div class="divider"></div>
+
+            <section id="colors">
+                <h5 class="subtitle">Editing</h5>
+                <h2 class="title">Colors</h2>
+                You can easily edit colors on this template.
+                <br>
+                1. Open the <b>assets/sass/_variables.scss</b>
+                <br>
+                2. Edit the HEX code.
+                <br>
+                3. Compile the sass
+                <ul>
+                    <li>
+                        <strong>$colorPrimary</strong> - Main theme color
+                    </li>
+                    <li>
+                        <strong>$colorSecondary</strong> - Secondary color
+                    </li>
+                    <li>
+                        <strong>$colorSuccess</strong> - Success color
+                    </li>
+                    <li>
+                        <strong>$colorDanger</strong> - Danger color
+                    </li>
+                    <li>
+                        <strong>$colorWarning</strong> - Warning color
+                    </li>
+                    <li>
+                        <strong>$colorInfo</strong> - Info color
+                    </li>
+                </ul>
+
+            </section>
+
+            <div class="divider"></div>
+
+            <section id="font">
+                <h5 class="subtitle">Editing</h5>
+                <h2 class="title">Font</h2>
+                <p>
+                    1. Find any font in Google Fonts and copy the import url
+                    <br>
+                    2. Open the <b>assets/sass/_font.scss</b>
+                    <br>
+                    3. Change the import url (line 1) (If you use google font)
+                    <br>
+                    4. Change the $fontFamily value.
+                    <br>
+                    5. Compile the sass files.
+                    <br><br>
+                    Do not forget to update font weights if your new font are different from the current weights.
+                </p>
+            </section>
+
+            <div class="divider"></div>
+
+            <section id="header">
+                <h5 class="subtitle">Editing</h5>
+                <h2 class="title">Header</h2>
+                <p>
+                    You can view the styles on <b>component-appheader.html</b>.
+                </p>
+            </section>
+
+            <div class="divider"></div>
+
+            <section id="bottommenu">
+                <h5 class="subtitle">Editing</h5>
+                <h2 class="title">Bottom Menu</h2>
+                <p>
+                    You can view the styles on <b>component-appbottommenu.html</b>.
+                </p>
+            </section>
+
+            <div class="divider"></div>
+
+            <section id="images">
+                <h5 class="subtitle">Sources</h5>
+                <h2 class="title">Images</h2>
+                <p>
+                    All images are from <a href="https://unsplash.com" target="_blank">unsplash.com</a> and
+                    used for demo purpose and not include in the purchase packages.
+                </p>
+                <p>
+                    All illustrations are from <a href="https://www.drawkit.io/" target="_blank">drawkit.io</a> and
+                    used for demo purpose and not include in the purchase packages.
+                </p>
+            </section>
+
+            <div class="divider"></div>
+
+            <section id="icons">
+                <h5 class="subtitle">Sources</h5>
+                <h2 class="title">Icons</h2>
+                <p>
+                    This template mainly use <a href="https://ionicons.com" target="_blank">Ionicons v5</a>
+                    and also supporting the <a href="https://ionicons.com/v4/" target="_blank">Ionicons v4</a>.<br>
+                    You can view all the icons on the Ionic website.<br>
+                </p>
+            </section>
+
+            <div class="divider"></div>
+
+            <section id="fonts">
+                <h5 class="subtitle">Sources</h5>
+                <h2 class="title">Fonts</h2>
+                <p>
+                    <a href="https://fonts.google.com/specimen/Poppins"
+                        target="_blank">Poppins from Google Fonts</a>.
+                </p>
+            </section>
+
+            <div class="divider"></div>
+
+            <section id="plugins">
+                <h5 class="subtitle">Sources</h5>
+                <h2 class="title">Plugins</h2>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Plugin</th>
+                            <th scope="col">Website</th>
+                            <th scope="col">Licence</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bootstrap 4</td>
+                            <td><a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a></td>
+                            <td>MIT</td>
+                        </tr>
+                        <tr>
+                            <td>jQuery v3.4.1</td>
+                            <td><a href="https://jquery.com/" target="_blank">https://jquery.com/</a></td>
+                            <td>MIT</td>
+                        </tr>
+                        <tr>
+                            <td>Popper JS</td>
+                            <td><a href="https://popper.js.org/" target="_blank">https://popper.js.org/</a></td>
+                            <td>MIT</td>
+                        </tr>
+                        <tr>
+                            <td>Owl Carousel 2</td>
+                            <td><a href="https://owlcarousel2.github.io/OwlCarousel2/"
+                                    target="_blank">https://owlcarousel2.github.io/OwlCarousel2/</a></td>
+                            <td>MIT</td>
+                        </tr>
+                        <tr>
+                            <td>Ionicons v4</td>
+                            <td><a href="https://ionicons.com/v4/" target="_blank">https://ionicons.com/v4/</a></td>
+                            <td>MIT</td>
+                        </tr>
+                        <tr>
+                            <td>Ionicons v5</td>
+                            <td><a href="https://ionicons.com" target="_blank">https://ionicons.com</a></td>
+                            <td>MIT</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+            <div class="divider"></div>
+
+            <section id="support">
+                <h5 class="subtitle">Need Help?</h5>
+                <h2 class="title">Support</h2>
+                Feel free to contact with us for your feedbacks or questions.
+                <ul>
+                    <li>
+                        Reach us on <a
+                            href="https://themeforest.net/item/finapp-wallet-banking-html-mobile-template/25738217/support"
+                            target="_blank">support tab</a>.
+                    </li>
+                </ul>
+            </section>
+
+
+        </div>
+        <!-- * main -->
+
+
+    </div>
+
+</body>
+
+</html>

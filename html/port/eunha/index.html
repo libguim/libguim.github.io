@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eunha Flower</title>
+    <link rel="stylesheet" href="js/bootstrap-3.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(function(){
+
+            // main slider
+            $('.main-slide').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 700,
+            autoplay: true,
+            fade: true,
+            cssEase: 'linear'
+            });
+
+
+            // header
+            var $header = $('.header'); //헤더를 변수에 넣기
+            var $page = $('#section_about'); //색상이 변할 부분
+            var $window = $(window);
+            var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
+            
+            $window.resize(function(){ //반응형을 대비하여 리사이즈시 top값을 다시 계산
+                pageOffsetTop = $page.offset().top;
+            });
+            
+            $window.on('scroll', function(){ //스크롤시
+                var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태;
+                $header.toggleClass('down', scrolled); //클래스 토글
+            });
+
+
+            // nav button click
+            $(".btn-allmenu").click(function(){
+                $(".header nav, .header nav .nav-menu").toggleClass('active');
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+    
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1><div class="eunha-logo"></h1>
+                        <nav>
+                            <button type="button" class="btn btn-allmenu">
+                                <span class="material-icons">
+                                    menu
+                                </span>
+                            </button>
+                            <ul class="nav-menu">
+                                <li><a href="#section_about">about us</a></li>
+                                <li><a href="#section_selection">our selections</a></li>
+                                <li><a href="#section_delivery">delivery</a></li>
+                                <li><a href="#section_insta">instagram</a></li>
+                                <li><a href="#section_findshop">contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main id="eunha-main">
+            <div class="main-slide">
+                <article>
+                    <div class="main-title container">
+                        <div class="row">
+                            <div class="mainTxt col-sm-12 text-center">
+                                <h2><img src="img/logo_symbol.png" alt="main symbol"></h2>
+                                <h3 class="lora50">Let the flowers bloom again</h3>
+                                <p class="noto18">꽃이 삶 속에서 다시 피어나기를</p>
+                            </div>
+                            <div class="col-sm-12 area-btn">
+                                <button type="button" class="btn btn-mainselect">OUR SELECTIONS</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="main-title container">
+                        <div class="row">
+                            <div class="mainTxt col-sm-12 text-center">
+                                <h2><img src="img/logo_symbol.png" alt="main symbol"></h2>
+                                <h3 class="lora50">Let the flowers do the talking</h3>
+                                <p class="noto18">꽃이 당신의 마음을 대신할 수 있도록</p>
+                            </div>
+                            <div class="col-sm-12 area-btn">
+                                <button type="button" class="btn btn-mainselect">OUR SELECTIONS</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <!-- *main -->
+
+        <!-- about -->
+        <section id="section_about" class="section section-padding">
+            <div class="container">
+                <div class="type-a row">
+                    <div class="col-sm-4 tit">
+                        <p class="tit-about">은하플라워에 대하여</p>
+                        <h4>ABOUT
+                            EUNHA
+                            FLOWER</h4>
+                    </div>
+                    <div class="col-sm-8 cont">
+                        <p>은하플라워는 꽃과 나무를 포함한 다양한 제철의 식물을 활용하여 <br> 우리 삶과의 관계를 더욱
+                            풍성하고 의미있게 만들 수 있다는 믿음에서 출발하였습니다. <br>
+                            오시는 한 분 한 분마다 꽃과 식물을 통해
+                            아름다운 풍경을 선사해주어 삶에 더 많은 미소를 지을 수 있게 되었으면 좋겠습니다.
+                        </p>
+                        <div class="list-item row">
+                            <div class="col-sm-4">
+                                <span class="material-icons md-48">
+                                    filter_vintage
+                                    </span>
+                                <h5>fresh flowers</h5>
+                                <p>은하플라워와 긴밀하게
+                                    일하는 농장과 꽃시장을
+                                    통하여 가장 신선한 꽃과 
+                                    식물을 사용합니다.</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <span class="material-icons md-48">
+                                    local_shipping
+                                    </span>
+                                <h5>flowers delivery</h5>
+                                <p>전국 꽃배달을 원하시는
+                                    목적지로 꽃과 화분을
+                                    원하는 시간대에
+                                    받아보실 수 있습니다.</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <span class="material-icons md-48">
+                                    volunteer_activism
+                                    </span>
+                                <h5>with love</h5>
+                                <p>은하플라워를 꾸준히
+                                    찾아주시는 고객 여러분을
+                                    위해 모든 꽃과 식물을
+                                    사랑으로 다룹니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- *about -->
+
+        <!-- our selections -->
+        <section id="section_selection" class="section section-padding">
+            <div class="type-b text-center">
+                <h3>OUR SELECTIONS</h3> 
+                <p>은하플라워 웹페이지 방문을 진심으로 감사드립니다. <br>
+                    아래의 다양한 꽃과 식물 사진을 클릭하시면 <br> 해당 제품을 자세히 확인하실 수 있습니다.
+                </p>
+            </div>
+        </section>
+        <!-- *our selections -->
+
+        <!-- masonry img -->
+        <section id="section_masonry" class="section section-padding">
+            <div class="container">
+                <div class="depth-01">
+                    <figure>
+                        <div class="img cate-desk"></div>
+                        <figcaption class="text">
+                            <div class="title">
+                                <p class="secondary">탁상용 화분 / 승진&middot개업</p>
+                                <h5 class="primary">ANNIVERSARY POTTED PLANT & DESK PLANT</h5>
+                            </div>
+                            <div class="description">
+                                승진이나 개업 선물로 탁월한 탁상용 화분은 공기 청정 효과가 있습니다. 음이온과
+                                산소를 발생시키는 화분을 두어 주변의 환경을 바꾸어보세요.
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <div class="depth-02">
+                        <figure>
+                            <div class="img cate-anni"></div>
+                            <figcaption class="text">
+                                <div class="title">
+                                    <p class="secondary">축하화환&middot근조화환</p>
+                                    <h5 class="primary">ANNIVERSARY &
+                                        FUNERAL WREATH</h5>
+                                </div>
+                                <div class="description">
+                                    은하플라워의 정성이 담긴 화환으로
+                                    선물한 꽃은 소중한 사랑과 함께
+                                    그의 곁에 있을 것입니다.
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="img cate-basket"></div>
+                            <figcaption class="text">
+                                <div class="title">
+                                    <p class="secondary">꽃바구니</p>
+                                    <h5 class="primary">FLOWER BASKET</h5>
+                                </div>
+                                <div class="description">
+                                    신선한 꽃과 다양한 색감의 소재 선택을
+                                    도와드리고, 가장 잘 어울리는 꽃바구니
+                                    선물이 될 수 있도록 노력합니다.
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="depth-03">
+                        <figure>
+                            <div class="img cate-bouquet"></div>
+                            <figcaption class="text">
+                                <div class="title">
+                                    <p class="secondary">꽃다발</p>
+                                    <h5 class="primary">FLOWER BOUGUET</h5>
+                                </div>
+                                <div class="description">
+                                    매일 새로운 꽃으로 신선하게 제작합니다.
+                                    좋아하는 색상의 꽃다발을 찾아서
+                                    지금 주문하세요.
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="img cate-orchid"></div>
+                            <figcaption class="text">
+                                <div class="title">
+                                    <p class="secondary">동양란&middot;서양란</p>
+                                    <h5 class="primary">ORIENTAL &
+                                        TROPICAL ORCHID</h5>
+                                </div>
+                                <div class="description">
+                                    당일 농장경매를 통해 매입한 싱싱한
+                                    품종의 난을 생동감이 넘치는 색상으로 
+                                    만나보실 수 있습니다.
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="img cate-preser"></div>
+                            <figcaption class="text">
+                                <div class="title">
+                                    <p class="secondary">프리저브드 플라워</p>
+                                    <h5 class="primary">PRESERVED FLOWER</h5>
+                                </div>
+                                <div class="description">
+                                    바삭하게 마르지 않는 은하플라워만의
+                                    프리저브드 플라워(Preserved Flower)
+                                    보존 처리를 통해 시들지 않는 꽃을
+                                    만나보세요.
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="img cate-indoor"></div>
+                            <figcaption class="text">
+                                <div class="title">
+                                    <p class="secondary">관엽식물 / 승진&middot개업</p>
+                                    <h5 class="primary">FOLIAGE PLANTS &
+                                        INDOOR PLANTS</h5>
+                                </div>
+                                <div class="description">
+                                    커다란 잎으로 공기 정화를 도와주는 
+                                    관엽식물은 집들이나 개업선물로
+                                    좋습니다. 다양한 식물을 만나보세요.
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- *masonry img -->
+        
+        <!-- idea -->
+        <section id="section_idea" class="section section-padding">
+            <div class="type-b text-center">
+                <h3>Flowers are always a good idea.</h3>
+                <p class="subtit">꽃은 언제나 좋은 말을 들려줍니다. 
+                <p>꽃과 식물은 우리에게 위로가 되어줍니다.
+                    집이나 사무실에 꽃이나 식물을 두었을 경우 긍정적인 영향을 준다는 
+                    많은 연구 결과가 있습니다. <br> 행복지수를 높이고 스트레스를 줄여
+                    가장 행복한 시간이 될 수 있도록 하는 것이야말로 우리가 원하는 환경이 아닐까요?<br>
+                    멋진 식사 테이블이나 정원으로 삶을 행복하게 가꾸어 보세요.
+                </p>
+            </div>
+        </section>
+        <!-- *idea -->
+
+        <!-- delivery -->
+        <section id="section_delivery" class="section section-padding">
+            <div class="container">
+                <div class="type-a row">
+                    <div class="col-sm-4 tit">
+                        <p class="tit-about">전국 꽃배달</p>
+                        <h4>SEND YOUR
+                            FLOWERS &
+                            PLANTS</h4>
+                    </div>
+                    <div class="col-sm-8 cont">
+                        <p>아래의 버튼을 눌러 전화를 하시거나 카카오톡 메시지를 통해 주문하시면 <br>
+                            신속하게 국내 어디에서나 꽃을 받아보실 수 있습니다.</p>
+                        <div class="list-btn row">
+                            <button type="button" class="col-sm-2 btn btn-talk">
+                                <span class="material-icons">
+                                question_answer
+                                </span>
+                                <span>talk now</span>
+                            </button>
+                            <button type="button" class="col-sm-2 btn btn-call">
+                                <span class="material-icons">
+                                    phone_in_talk
+                                </span>
+                                <span>call now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- *delivery -->
+        
+        <!-- life -->
+        <section id="section_life" class="section section-padding">
+            <div class="type-b text-center">
+                <h3>Flower comes to life.</h3>
+                <p class="subtit">꽃이 곧 삶이 되는 마법</p> 
+                <p>늘 당신 곁에 꽃과 식물을 놓아두세요. <br>
+                    신비한 마법에 걸린 것처럼 맑고 행복한 기운을 전해드립니다.
+                </p>
+            </div>
+        </section>
+        <!-- *life -->
+
+        <!-- review -->
+        <section id="section_review" class="section section-padding">
+            <div class="container">
+                <div class="type-a row">
+                    <div class="col-sm-6">
+                        <div class="thumb-img"></div>
+                    </div>
+                    <div class="col-sm-6 cont">
+                        <p style="text-align: left;">
+                            매주 금요일마다 은하플라워의 꽃다발을 선물해주며
+                            사랑을 키워오다가 4월에 결혼했습니다.
+                            아내가 저화 결혼하게 된 계기 중 하나가
+                            은하플라워의 그날의 날씨와 계절을 고려한 감각적인  
+                            꽃선물 덕분이라고 하더라구요.
+                        </p>
+                        <p style="text-align: left;">
+                            김준수<br>
+                            JUMSU KIM <br>
+                            서울 논현
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- *review -->
+
+        <!-- instagram -->
+        <section id="section_insta" class="section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2 col-xs-4 img"><a href=""><img src="img/sign_insta.png"></a></div>
+                    <div class="col-sm-2 col-xs-4 img"><a href=""><img src="img/sign_insta.png"></a></div>
+                    <div class="col-sm-2 col-xs-4 img"><a href=""><img src="img/sign_insta.png"></a></div>
+                    <div class="col-sm-2 col-xs-4 img"><a href=""><img src="img/sign_insta.png"></a></div>
+                    <div class="col-sm-2 col-xs-4 img"><a href=""><img src="img/sign_insta.png"></a></div>
+                    <div class="col-sm-2 col-xs-4 img"><a href=""><img src="img/sign_insta.png"></a></div>
+                    <div class="col-sm-2 col-xs-4 img"><a href=""><img src="img/sign_insta.png"></a></div>
+                    <div class="col-sm-2 col-xs-4 img"><a href=""><img src="img/sign_insta.png"></a></div>
+                    <div class="col-sm-2 col-xs-4 img"><a href=""><img src="img/sign_insta.png"></a></div>
+                    <div class="col-sm-2 col-xs-4 img"><a href=""><img src="img/sign_insta.png"></a></div>
+                    <div class="col-sm-2 col-xs-4 img"><a href=""><img src="img/sign_insta.png"></a></div>
+                    <div class="col-sm-2 col-xs-4 img"><a href=""><img src="img/sign_insta.png"></a></div>
+                </div>
+            </div>
+        </section>
+        <!-- *instagram -->
+
+        <!-- find shop -->
+        <section id="section_findshop" class="section section-padding">
+            <div class="container">
+                <div class="type-a row">
+                    <div class="col-sm-4 tit">
+                        <p class="tit-about">찾아오는 길</p>
+                        <h4>WHERE TO FIND
+                            EUNHA FLOWER</h4>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-sm-4">
+                        <h5>THE SHOP</h5>
+                        <p>경기도 고양시 일산동구 
+                            숲속마을로 208 (식사동)</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h5>OPENING HOURS</h5>
+                        <p>운영시간
+                            08:00 - 21:00 <br>
+                            9시 이전 고객님은 사전예약 부탁드립니다.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h5>GENERAL INQUIRIES </h5>
+                        <p>031-901-9512 <br>
+                            eunha9512@naver.com</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- *find shop -->
+
+        <!-- map -->
+        <section id="section_map" class="section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50530.61322173187!2d126.8836863612218!3d37.668869857942745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c905509c361d5%3A0xb7579533187d8cc9!2z6rK96riw64-EIOqzoOyWkeyLnCDsnbzsgrDrj5nqtawg7Iud7IKs64-ZIDIwOA!5e0!3m2!1sko!2skr!4v1623571501067!5m2!1sko!2skr" width="100%" height="640px" style="border:0; padding: 0; margin: 0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <!-- *map -->
+
+        <!-- talk -->
+        <section id="section_talk" class="section section-padding">
+            <div class="type-b text-center">
+                <div class="kakao-logo">
+                    <img src="img/logo_kakao.png" alt="kakaotalk logo">
+                </div>
+                <button type="button" class="btn btn-kakao">@ 은하플라워</button>
+                <p>반가워요! 위의 버튼을 클릭하거나 친구찾기에서 "은하플라워"를 검색하셔서 <br> 카톡친구를 맺고,
+                    무엇이든 물어보세요. <br> 친절하고 신속하게 상담해드리겠습니다.</p> 
+            </div>
+        </section>
+        <!-- *talk -->
+
+        <!-- footer -->
+        <footer id="eunha_footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1><img src="img/logo_eunha.png" alt="footer logo"></h1>
+                        <div class="footer-info">
+                            <address>경기도 고양시 일산동구 숲속마을로 208 (식사동)
+                            </address>
+                            <p>T. 031-901-9512 <br>
+                            M. 010-3479-9512 </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <div class="footer-sns">
+                            <ul>
+                                <li><a href=""><img src="img/sns_kastory.png" alt="kakao story"></a></li>
+                                <li><a href=""><img src="img/sns_kakao.png" alt="kakao talk"></a></li>
+                                <li><a href=""><img src="img/sns_insta.png" alt="instagram"></a></li>
+                            </ul>
+                        </div>
+                        <p class="copy">
+                            Copyright 2021 (c) EUNHAFLOWER. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- *footer -->
+
+    </div>
+</body>
+</html>
