@@ -128,6 +128,9 @@ h1 a{
    font-weight: 700;
    color: var(--primary-color);
 }
+.nav ul li.on a{
+   color: violet;
+}
 
 /* 메인 컨텐츠 영역 */
 .article{
@@ -214,8 +217,8 @@ h1 a{
       border-bottom: 1px solid var(--border-color);
    }
    #vertical_area.active{
-      /* height: 355px; */
-      height: 184px;
+      height: 355px;
+      /* height: 184px; */
       transition: all .3s ease-in-out;
    }
    #contents_area{
