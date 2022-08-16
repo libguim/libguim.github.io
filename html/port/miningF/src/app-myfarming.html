@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Farming App">
+    <meta name="keywords" content="Farming App" />
+    <title>MyFarming-Farming</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Finapp/HTML/assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Finapp/HTML/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../Finapp/HTML/assets/img/favicon.png" sizes="32x32">
+    <link rel="shortcut icon" href="../Finapp/HTML/assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../css/custom_sofia.css">
+    <!-- Jquery -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/popper.min.js"></script>
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type= "text/javascript" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- Base Js File -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/base.js"></script>
+</head>
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <img src="../Finapp/HTML/assets/img/logo-icon.png" alt="icon" class="loading-icon">
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="#" class="headerButton" data-toggle="modal" data-target="#sidebarPanel">
+                <span class="material-icons">
+                arrow_back_ios
+                </span>
+            </a>
+        </div>
+        <div class="pageTitle">
+            나의 파밍
+        </div>
+        <div class="right">
+            <a href="app-buygoods.html" class="headerButton">
+                <span class="material-icons">
+                shopping_cart
+                </span>
+            </a>
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+
+        <div class="section mt-2">
+            <!-- <div class="section-title">Lined</div> -->
+            <div class="card">
+                <div class="card-body pt-0">
+                    <ul class="nav nav-tabs lined" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#overview2" role="tab">
+                                전체
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#cards2" role="tab">
+                                진행
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#settings2" role="tab">
+                                완료
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content yscroll mt-2">
+                        <div class="tab-pane fade show active" id="overview2" role="tabpanel">
+                            <!-- 진행 Farming -->
+                            <div class="section mt-4">
+                                <div class="goals">
+                                    <!-- item -->
+                                    <a href="app-farmingdetails.html">
+                                        <div class="item item-abled">
+                                            <div class="divider">
+                                                <img src="../img/bitcoin.png" class="mb-1 mr-1" alt="">
+                                                <h2 class="title" style="display: inline-block;">UP2021</h2>
+                                                <small style="float: right; margin-top: 5px;">2021.01.01 - 2021.02.21</small>
+                                            </div>
+                                            <div class="in mt-2 mb-2">
+                                                <div>
+                                                    <div>전체 파밍</div>
+                                                    <div>전체 수익</div>
+                                                </div>
+                                                <div>
+                                                    <div class="price">500 USD</div>
+                                                    <div class="price">500 USD</div>
+                                                </div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                                                    aria-valuemin="0" aria-valuemax="100">85%</div>
+                                            </div>
+                                            <div class="in mt-1">
+                                                <div>
+                                                    <div class="mb-1">누적 수익</div>
+                                                </div>
+                                                <div>
+                                                    <div class="price">500 / 500</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-secondary">
+                                                <small>상품 코드 : <b>12345566</b></small>
+                                                <small style="float: right;">상태 : <b class="text-primary">진행중</b></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- * item -->
+                                </div>
+                            </div>
+                            <!-- * 진행 Farming -->
+                            <!-- 완료 Farming -->
+                            <div class="section mt-4">
+                                <div class="goals">
+                                    <!-- item -->
+                                    <a href="app-farmingdetails.html">
+                                        <div class="item item-disabled">
+                                            <div class="divider">
+                                                <img src="../img/bitcoin.png" class="mb-1 mr-1" alt="">
+                                                <h2 class="title" style="display: inline-block;">UP2021</h2>
+                                                <small style="float: right; margin-top: 5px;">2021.01.01 - 2021.02.21</small>
+                                            </div>
+                                            <div class="in mt-2 mb-2">
+                                                <div>
+                                                    <div>전체 파밍</div>
+                                                    <div>전체 수익</div>
+                                                </div>
+                                                <div>
+                                                    <div class="price">500 USD</div>
+                                                    <div class="price">500 USD</div>
+                                                </div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="85"
+                                                    aria-valuemin="0" aria-valuemax="100">100%</div>
+                                            </div>
+                                            <div class="in mt-1">
+                                                <div>
+                                                    <div class="mb-1">누적 수익</div>
+                                                </div>
+                                                <div>
+                                                    <div class="price">500 / 500</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-secondary">
+                                                <small>상품 코드 : <b>12345566</b></small>
+                                                <small style="float: right;">상태 : <b>완료</b></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- * item -->
+                                </div>
+                            </div>
+                            <!-- * 완료 Farming -->
+                        </div>
+                        <div class="tab-pane fade" id="cards2" role="tabpanel">
+                            <!-- 진행 Farming -->
+                            <div class="section mt-4">
+                                <div class="goals">
+                                    <!-- item -->
+                                    <a href="app-farmingdetails.html">
+                                        <div class="item item-abled">
+                                            <div class="divider">
+                                                <img src="../img/bitcoin.png" class="mb-1 mr-1" alt="">
+                                                <h2 class="title" style="display: inline-block;">UP2021</h2>
+                                                <small style="float: right; margin-top: 5px;">2021.01.01 - 2021.02.21</small>
+                                            </div>
+                                            <div class="in mt-2 mb-2">
+                                                <div>
+                                                    <div>전체 파밍</div>
+                                                    <div>전체 수익</div>
+                                                </div>
+                                                <div>
+                                                    <div class="price">500 USD</div>
+                                                    <div class="price">500 USD</div>
+                                                </div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                                                    aria-valuemin="0" aria-valuemax="100">85%</div>
+                                            </div>
+                                            <div class="in mt-1">
+                                                <div>
+                                                    <div class="mb-1">누적 수익</div>
+                                                </div>
+                                                <div>
+                                                    <div class="price">500 / 500</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-secondary">
+                                                <small>상품 코드 : <b>12345566</b></small>
+                                                <small style="float: right;">상태 : <b class="text-primary">진행중</b></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- * item -->
+                                </div>
+                            </div>
+                            <!-- * 진행 Farming -->
+                        </div>
+                        <div class="tab-pane fade" id="settings2" role="tabpanel">
+                            <!-- 완료 Farming -->
+                            <div class="section mt-4">
+                                <div class="goals">
+                                    <!-- item -->
+                                    <a href="app-farmingdetails.html">
+                                        <div class="item item-disabled">
+                                            <div class="divider">
+                                                <img src="../img/bitcoin.png" class="mb-1 mr-1" alt="">
+                                                <h2 class="title" style="display: inline-block;">UP2021</h2>
+                                                <small style="float: right; margin-top: 5px;">2021.01.01 - 2021.02.21</small>
+                                            </div>
+                                            <div class="in mt-2 mb-2">
+                                                <div>
+                                                    <div>전체 파밍</div>
+                                                    <div>전체 수익</div>
+                                                </div>
+                                                <div>
+                                                    <div class="price">500 USD</div>
+                                                    <div class="price">500 USD</div>
+                                                </div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="85"
+                                                    aria-valuemin="0" aria-valuemax="100">100%</div>
+                                            </div>
+                                            <div class="in mt-1">
+                                                <div>
+                                                    <div class="mb-1">누적 수익</div>
+                                                </div>
+                                                <div>
+                                                    <div class="price">500 / 500</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-secondary">
+                                                <small>상품 코드 : <b>12345566</b></small>
+                                                <small style="float: right;">상태 : <b>완료</b></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- * item -->
+                                </div>
+                            </div>
+                            <!-- * 완료 Farming -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- * App Capsule -->
+
+
+</body>
+</html>

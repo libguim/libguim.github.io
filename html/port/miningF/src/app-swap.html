@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Farming App">
+    <meta name="keywords" content="Farming App" />
+    <title>Swap-Farming</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Finapp/HTML/assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Finapp/HTML/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../Finapp/HTML/assets/img/favicon.png" sizes="32x32">
+    <link rel="shortcut icon" href="../Finapp/HTML/assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../css/custom_sofia.css">
+    <!-- Jquery -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/popper.min.js"></script>
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type= "text/javascript" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- Base Js File -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/base.js"></script>
+</head>
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <img src="../Finapp/HTML/assets/img/logo-icon.png" alt="icon" class="loading-icon">
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="#" class="headerButton" data-toggle="modal" data-target="#sidebarPanel">
+                <span class="material-icons">
+                    menu
+                </span>
+            </a>
+        </div>
+        <div class="pageTitle">
+            CI
+        </div>
+        <div class="right">
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <!-- Wallet Card -->
+        <div class="section wallet-card-section pt-1">
+            <div class="wallet-card">
+                <div class="dropdown">
+                    <button class="btn btn-outline-primary dropdown-toggle" type="button" data-toggle="dropdown" style="width: 100%;">
+                        코인을 선택하세요
+                    </button>
+                    <div class="dropdown-menu" style="width: 100%;">
+                        <a class="dropdown-item" href="#">비트코인</a>
+                        <a class="dropdown-item" href="#">트론</a>
+                    </div>
+                </div>
+
+                <!-- Balance -->
+                <div class="balance">
+                    <div class="left">
+                        <small class="title text-dark">현재 잔액</small>
+                        <div>
+                            <h1 class="total">2,222.5 USD</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- * Balance -->
+            </div>
+        </div>
+        <!-- Wallet Card -->
+
+        <!-- Swap -->
+        <div class="section mt-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="goals mb-2">
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-5 mt-2">
+                                    <label class="label card-title" for="userid">금액 입력</label>
+                                </div>
+                                <div class="col-7 form-group basic">
+                                    <input type="text" class="form-control" id="userid" placeholder="금액 입력" style="width: calc(100% - 72px);">
+
+                                    <div class="btn-group" style="position: absolute; right: 0; top: 13px;">
+                                        <button type="button" class="btn btn-icon btn-muted">
+                                            <span class="material-icons">
+                                                remove
+                                                </span>
+                                        </button>
+                                        <button type="button" class="btn btn-icon btn-muted">
+                                            <span class="material-icons">
+                                                add
+                                                </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="in">
+                                <div>
+                                    <div>최대 스왑 금액</div>
+                                    <div>최소 스왑 금액</div>
+                                    <div>수수료</div>
+                                </div>
+                                <div class="text-right">
+                                    <div>500 USD</div>
+                                    <div>500 USD</div>
+                                    <div>20%</div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-5">
+                                    <h5 class="card-title">BTC 금액</h5>
+                                    <h5 class="card-title">환산 금액</h5>
+                                </div>
+                                <div class="col-7 text-right">
+                                    <h5 class="card-title">0.000 BTC</h5>
+                                    <h5 class="card-title">00.000 USD</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SWAP 버튼 -->
+                    <button type="button" class="btn btn-info btn-block btn-lg" data-toggle="modal" data-target="#DialogIconedSuccess">교 환</button>
+                    <!-- * SWAP 버튼 -->
+
+                </div>
+            </div>
+        </div>
+        <!-- * Swap -->
+
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Sidebar -->
+    <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <!-- profile box -->
+                    <div class="profileBox pt-2 pb-2">
+                        <a href="#" class="btn btn-link btn-icon" data-dismiss="modal">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </a>
+                        <h2 class="m-0"> 메뉴</h2>
+                    </div>
+                    <!-- * profile box -->
+
+                    <!-- menu -->
+                    <ul class="listview flush transparent no-line image-listview">
+                        <li>
+                            <a href="app-buygoods.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <span class="material-icons">
+                                        shopping_cart
+                                    </span>
+                                </div>
+                                <div class="in">
+                                    상품 구매
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-myinfo.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <span class="material-icons">
+                                        settings
+                                    </span>
+                                </div>
+                                <div class="in">
+                                    내 정보
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-notice.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <span class="material-icons">
+                                        campaign
+                                        </span>
+                                </div>
+                                <div class="in">
+                                    공지사항
+                                    <span class="badge badge-primary">10</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-version.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <span class="material-icons">
+                                        apps
+                                    </span>
+                                </div>
+                                <div class="in">
+                                    앱 정보
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- * menu -->
+
+                    <!-- footer box -->
+                    <div class="footerBox">
+                        <a href="#" class="btn btn-link btn-icon" data-dismiss="modal">
+                            로그아웃&nbsp;
+                            <span class="material-icons">
+                            logout
+                            </span>
+                        </a>
+                    </div>
+                    <!-- * footer box -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- * App Sidebar -->
+
+    <!-- Modal - DialogIconedSuccess -->
+    <div class="modal fade dialogbox" id="DialogIconedSuccess" data-backdrop="static" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-icon text-info">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="modal-header">
+                    <h5 class="modal-title">고객님의 잔액이 <br><b class="text-primary">0000 BTC</b>에서 <b class="text-primary">0000USD</b>로 <br> 변환됩니다.</h5>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title">계속 진행하시겠습니까?</h5>
+                </div>
+                    <div class="modal-footer">
+                        <div class="btn-inline">
+                            <a href="#" class="btn btn-text-secondary" data-dismiss="modal">취소</a>
+                            <a href="#" class="btn btn-text-primary" data-dismiss="modal">확인</a>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- * Modal - DialogIconedSuccess -->
+
+
+</body>
+</html>

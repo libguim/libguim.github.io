@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Farming App">
+    <meta name="keywords" content="Farming App" />
+    <title>MyInfo-Farming</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Finapp/HTML/assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Finapp/HTML/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../Finapp/HTML/assets/img/favicon.png" sizes="32x32">
+    <link rel="shortcut icon" href="../Finapp/HTML/assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../css/custom_sofia.css">
+    <!-- Jquery -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/popper.min.js"></script>
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type= "text/javascript" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- Base Js File -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/base.js"></script>
+</head>
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <img src="../Finapp/HTML/assets/img/logo-icon.png" alt="icon" class="loading-icon">
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="#" class="headerButton" data-toggle="modal" data-target="#sidebarPanel">
+                <span class="material-icons">
+                arrow_back_ios
+                </span>
+            </a>
+        </div>
+        <div class="pageTitle">
+            내 정보
+        </div>
+        <div class="right">
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <!-- Contents -->
+        <div class="section mb-5 p-2">
+            <form action="app-index.html">
+                <div class="card">
+                    <div class="card-body">
+                        <div>
+                            <small>아이디</small>
+                            <p>Uptive</p>
+                        </div>
+
+                        <div>
+                            <small>이름</small>
+                            <p>Uptive</p>
+                        </div>
+
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="code">기존 비밀번호</label>
+                                <input type="password" class="form-control" id="code" placeholder="기존 비밀번호를 입력해주세요.">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="code">새로운 비밀번호</label>
+                                <input type="password" class="form-control" id="code" placeholder="8~22자 영문, 숫자, 특수문자 혼합">
+                                <input type="password" class="form-control" id="code" placeholder="비밀번호 재입력">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="email1">이메일</label>
+                                <div class="row">
+                                    <input type="email" class="form-control pull-left" id="email1" placeholder="app_farming@farming.com" style="margin-left: 7px; width: calc(100% - 86px - 7px);">
+                                    <i class="clear-input">
+                                        <ion-icon name="close-circle"></ion-icon>
+                                    </i>
+                                    <div class="pull-left">
+                                        <button type="button" class="btn btn-secondary"  data-toggle="modal" data-target="#DialogIconedInfo" style="padding: 3px 10px; width: 76px;">인증</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="code">인증코드</label>
+                                <input type="text" class="form-control" id="code" placeholder="숫자 6자리 입력">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="phone">전화번호</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="전화번호를 입력해주세요.">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <p class="p-05">
+                <small>*고객님 자산의 안전한 보호를 위하여 이메일 인증을 진행하고 있습니다. 본인 확인 절차이며, 이외의 용도로 사용되지 않습니다.</small>
+                </p>
+
+            </form>
+        </div>
+        <!-- * Contents -->
+
+        <!-- 저장 버튼 -->
+        <div class="form-button-group transparent">
+            <button type="submit" class="btn btn-primary btn-block btn-lg">저 장</button>
+        </div>
+        <!-- * 저장 버튼 -->
+
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- Modal - 인증 -->
+    <div class="modal fade dialogbox" id="DialogIconedInfo" data-backdrop="static" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-icon" size="large">
+                    <span class="material-icons md-48">
+                        mail
+                        </span>
+                </div>
+                <div class="modal-header">
+                    <h5 class="modal-title">인증 이메일을 발송하였습니다.</h5>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-inline">
+                        <a href="#" class="btn" data-dismiss="modal">확인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- * Modal - 인증 -->
+
+</body>
+</html>

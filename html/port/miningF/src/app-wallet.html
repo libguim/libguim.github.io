@@ -1,0 +1,407 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Farming App">
+    <meta name="keywords" content="Farming App" />
+    <title>Wallet-Farming</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Finapp/HTML/assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Finapp/HTML/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../Finapp/HTML/assets/img/favicon.png" sizes="32x32">
+    <link rel="shortcut icon" href="../Finapp/HTML/assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../css/custom_sofia.css">
+    <!-- Jquery -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/popper.min.js"></script>
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type= "text/javascript" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- Base Js File -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/base.js"></script>
+</head>
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <img src="../Finapp/HTML/assets/img/logo-icon.png" alt="icon" class="loading-icon">
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="#" class="headerButton" data-toggle="modal" data-target="#sidebarPanel">
+                <span class="material-icons">
+                arrow_back_ios
+                </span>
+            </a>
+        </div>
+
+        <!-- 지갑 이름 -->
+        <div class="pageTitle">
+            트론 지갑
+        </div>
+        <!-- *지갑 이름 -->
+        
+        <div class="right">
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- 커미션 거래내역 - App Capsule -->
+    <div id="appCapsule" style="display: none">
+
+        <!-- Wallet Card -->
+        <div class="section wallet-card-section pt-1">
+            <div class="wallet-card">
+                <!-- Balance -->
+                <div class="balance">
+                    <div class="left">
+                        <span class="title mb-2">나의 커미션 지갑 잔고</span>
+                        <h1 class="total">500 USD</h1>
+                    </div>
+                    <!-- <div class="right">
+                        <a href="#" class="button" data-toggle="modal" data-target="#depositActionSheet">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </a>
+                    </div> -->
+                </div>
+                <!-- * Balance -->
+            </div>
+        </div>
+        <!-- Wallet Card -->
+
+        <!-- History -->
+        <div class="section mt-2">
+            <h2 class="title">거래 내역</h2>
+            <div class="card" style="height: 325px; overflow-y:scroll;">
+                <div class="table-responsive">
+                    <table class="table rounded">
+                        <tbody>
+                            <tr>
+                                <th scope="row">송금 <div><sub>2021.01.06 185:39:20</sub></div></th>
+                                <td>100USD</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">송금 <div><sub>2021.01.06 185:39:20</sub></div></th>
+                                <td>100USD</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">송금 <div><sub>2021.01.06 185:39:20</sub></div></th>
+                                <td>100USD</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">송금 <div><sub>2021.01.06 185:39:20</sub></div></th>
+                                <td>100USD</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">송금 <div><sub>2021.01.06 185:39:20</sub></div></th>
+                                <td>100USD</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">송금 <div><sub>2021.01.06 185:39:20</sub></div></th>
+                                <td>100USD</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- * History -->
+
+    </div>
+    <!-- * 커미션 거래내역 - App Capsule -->
+
+    <!-- 비트코인 거래내역 - App Capsule -->
+    <div id="appCapsule" style="display: none">
+
+        <!-- Wallet Card -->
+        <div class="section wallet-card-section pt-1">
+            <div class="wallet-card">
+                <p class="title mb-3">나의 비트코인 지갑 잔고</p>
+                <!-- Balance -->
+                <div class="balance">
+                    <div class="left">
+                        <h1 class="total">500 BTC</h1>
+                        <p> = 0.0000 BTC</p>
+                        <small>1 BTC = 0.000000 USD</small>
+                    </div>
+                </div>
+                <!-- * Balance -->
+            </div>
+        </div>
+        <!-- Wallet Card -->
+
+        <!-- History -->
+        <div class="section mt-2">
+            <h2 class="title">거래 내역</h2>
+            <div class="card" style="height: 325px; overflow-y:scroll;">
+                <div class="table-responsive">
+                    <table class="table rounded">
+                        <tbody>
+                            <tr>
+                                <div class="transactions">
+                                    <!-- item -->
+                                    <a href="app-transaction-detail.html" class="item">
+                                        <div class="detail">
+                                            <h1 class="text-secondary mb-0 mr-05"> <ion-icon name="arrow-up-circle"></ion-icon></h1>
+                                            <div>
+                                                <strong>지갑주소</strong>
+                                                <p>2021.01.06 185:39:20</p>
+                                                <p class="ellipsis">TXID : customer_support/info_guide?seq=547&categorySeq=204</p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="price text-danger text-right">-23.00 BTC</div>
+                                            <div class="price text-dark text-right">- 0.000 USD</div>
+                                        </div>
+                                    </a>
+                                    <!-- * item -->
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="transactions">
+                                    <!-- item -->
+                                    <a href="app-transaction-detail.html" class="item">
+                                        <div class="detail">
+                                            <h1 class="text-secondary mb-0 mr-05"> <ion-icon name="arrow-up-circle"></ion-icon></h1>
+                                            <div>
+                                                <strong>지갑주소</strong>
+                                                <p>2021.01.06 185:39:20</p>
+                                                <p class="ellipsis">TXID : customer_support/info_guide?seq=547&categorySeq=204</p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="price text-danger text-right">-23.00 BTC</div>
+                                            <div class="price text-dark text-right">- 0.000 USD</div>
+                                        </div>
+                                    </a>
+                                    <!-- * item -->
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="transactions">
+                                    <!-- item -->
+                                    <a href="app-transaction-detail.html" class="item">
+                                        <div class="detail">
+                                            <h1 class="text-secondary mb-0 mr-05"> <ion-icon name="arrow-up-circle"></ion-icon></h1>
+                                            <div>
+                                                <strong>지갑주소</strong>
+                                                <p>2021.01.06 185:39:20</p>
+                                                <p class="ellipsis">TXID : customer_support/info_guide?seq=547&categorySeq=204</p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="price text-danger text-right">-23.00 BTC</div>
+                                            <div class="price text-dark text-right">- 0.000 USD</div>
+                                        </div>
+                                    </a>
+                                    <!-- * item -->
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="transactions">
+                                    <!-- item -->
+                                    <a href="app-transaction-detail.html" class="item">
+                                        <div class="detail">
+                                            <h1 class="text-secondary mb-0 mr-05"> <ion-icon name="arrow-up-circle"></ion-icon></h1>
+                                            <div>
+                                                <strong>지갑주소</strong>
+                                                <p>2021.01.06 185:39:20</p>
+                                                <p class="ellipsis">TXID : customer_support/info_guide?seq=547&categorySeq=204</p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="price text-danger text-right">-23.00 BTC</div>
+                                            <div class="price text-dark text-right">- 0.000 USD</div>
+                                        </div>
+                                    </a>
+                                    <!-- * item -->
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="transactions">
+                                    <!-- item -->
+                                    <a href="app-transaction-detail.html" class="item">
+                                        <div class="detail">
+                                            <h1 class="text-secondary mb-0 mr-05"> <ion-icon name="arrow-up-circle"></ion-icon></h1>
+                                            <div>
+                                                <strong>지갑주소</strong>
+                                                <p>2021.01.06 185:39:20</p>
+                                                <p class="ellipsis">TXID : customer_support/info_guide?seq=547&categorySeq=204</p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="price text-danger text-right">-23.00 BTC</div>
+                                            <div class="price text-dark text-right">- 0.000 USD</div>
+                                        </div>
+                                    </a>
+                                    <!-- * item -->
+                                </div>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- * History -->
+
+
+    </div>
+    <!-- * 비트코인 거래내역 - App Capsule -->
+
+    <!-- 트론 거래내역 - App Capsule -->
+    <div id="appCapsule" style="display: block">
+
+        <!-- Wallet Card -->
+        <div class="section wallet-card-section pt-1">
+            <div class="wallet-card">
+                <p class="title mb-3">나의 트론 지갑 잔고</p>
+                <!-- Balance -->
+                <div class="balance">
+                    <div class="left">
+                        <h1 class="total">500 TRX</h1>
+                        <p> = 0.0000 TRX</p>
+                        <small>1 BTC = 0.000000 USD</small>
+                    </div>
+                </div>
+                <!-- * Balance -->
+            </div>
+        </div>
+        <!-- Wallet Card -->
+
+        <!-- History -->
+        <div class="section mt-2">
+            <h2 class="title">거래 내역</h2>
+            <div class="card" style="height: 325px; overflow-y:scroll;">
+                <div class="table-responsive">
+                    <table class="table rounded">
+                        <tbody>
+                            <tr>
+                                <div class="transactions">
+                                    <!-- item -->
+                                    <div class="item">
+                                        <div class="detail">
+                                            <h1 class="text-secondary mb-0 mr-05"> <ion-icon name="arrow-up-circle"></ion-icon></h1>
+                                            <div>
+                                                <strong>지갑주소</strong>
+                                                <p>2021.01.06 185:39:20</p>
+                                                <p class="ellipsis">TXID : customer_support/info_guide?seq=547&categorySeq=204</p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="price text-danger text-right">-23.00 TRX</div>
+                                            <div class="price text-dark text-right">- 0.000 USD</div>
+                                        </div>
+                                    </div>
+                                    <!-- * item -->
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="transactions">
+                                    <!-- item -->
+                                    <div class="item">
+                                        <div class="detail">
+                                            <h1 class="text-secondary mb-0 mr-05"> <ion-icon name="arrow-up-circle"></ion-icon></h1>
+                                            <div>
+                                                <strong>지갑주소</strong>
+                                                <p>2021.01.06 185:39:20</p>
+                                                <p class="ellipsis">TXID : customer_support/info_guide?seq=547&categorySeq=204</p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="price text-danger text-right">-23.00 TRX</div>
+                                            <div class="price text-dark text-right">- 0.000 USD</div>
+                                        </div>
+                                    </div>
+                                    <!-- * item -->
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="transactions">
+                                    <!-- item -->
+                                    <div class="item">
+                                        <div class="detail">
+                                            <h1 class="text-secondary mb-0 mr-05"> <ion-icon name="arrow-up-circle"></ion-icon></h1>
+                                            <div>
+                                                <strong>지갑주소</strong>
+                                                <p>2021.01.06 185:39:20</p>
+                                                <p class="ellipsis">TXID : customer_support/info_guide?seq=547&categorySeq=204</p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="price text-danger text-right">-23.00 TRX</div>
+                                            <div class="price text-dark text-right">- 0.000 USD</div>
+                                        </div>
+                                    </div>
+                                    <!-- * item -->
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="transactions">
+                                    <!-- item -->
+                                    <div class="item">
+                                        <div class="detail">
+                                            <h1 class="text-secondary mb-0 mr-05"> <ion-icon name="arrow-up-circle"></ion-icon></h1>
+                                            <div>
+                                                <strong>지갑주소</strong>
+                                                <p>2021.01.06 185:39:20</p>
+                                                <p class="ellipsis">TXID : customer_support/info_guide?seq=547&categorySeq=204</p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="price text-danger text-right">-23.00 TRX</div>
+                                            <div class="price text-dark text-right">- 0.000 USD</div>
+                                        </div>
+                                    </div>
+                                    <!-- * item -->
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="transactions">
+                                    <!-- item -->
+                                    <div class="item">
+                                        <div class="detail">
+                                            <h1 class="text-secondary mb-0 mr-05"> <ion-icon name="arrow-up-circle"></ion-icon></h1>
+                                            <div>
+                                                <strong>지갑주소</strong>
+                                                <p>2021.01.06 185:39:20</p>
+                                                <p class="ellipsis">TXID : customer_support/info_guide?seq=547&categorySeq=204</p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="price text-danger text-right">-23.00 TRX</div>
+                                            <div class="price text-dark text-right">- 0.000 USD</div>
+                                        </div>
+                                    </div>
+                                    <!-- * item -->
+                                </div>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- * History -->
+
+    </div>
+    <!-- * 트론 거래내역 - App Capsule -->
+
+    <!-- 입금/출금 버튼 -->
+    <div class="form-button-group form-button-set transparent mt-3">
+        <button type="submit" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#DialogIconedSuccess">입금</button>
+        <button type="submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#DialogIconedInfo">출금</button>
+    </div>
+    <!-- * 입금/출금 버튼 -->
+
+</body>
+</html>

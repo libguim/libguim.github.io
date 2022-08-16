@@ -1,0 +1,372 @@
+@charset 'utf-8';
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Monoton|Play');
+
+/* 레이아웃 */
+#header{
+    position: fixed;
+    top: 0;
+    left: -530px;
+    width: 700px;
+    height: 100%;
+    background: linear-gradient(to left, #e6fc55, #b9fb05, #97e031);
+    transform: skewX(-40deg);
+    display: flex;
+    flex-flow: row wrap;
+}
+#contents{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* 헤더-네비게이션 영역 */
+.nav_logo{
+    position: relative;
+    top: 40px;
+    left: 595px;
+    transform: skewX(40deg);
+}
+.nav_logo a{
+    display: block;
+}
+.nav_logo a img{
+    width: 200px;
+}
+.nav_gnb{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    font-family: Play;
+    text-align: right;
+}
+.nav_gnb > li{
+    position: relative;
+    line-height: 40px;
+}
+.nav_gnb > li > a{
+    display: block;
+    line-height: 40px;
+    padding: 0 2rem;
+    font-size: 1.125rem;
+}
+.nav_gnb > li a em{
+    display: block;
+    transform: skewX(40deg);
+}
+.nav_gnb > li .sub{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.2s;
+    opacity: 0;
+    z-index: 1;
+}
+.nav_gnb > li:hover .sub{
+    top: -10px;
+    right: -140px;
+    opacity: 1;
+}
+.nav_gnb > li .sub li a{
+    display: block;
+    width: 150px;
+    line-height: 40px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #b9fb05;
+    transition: all 0.3s;
+}
+.nav_sns{
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    text-align: center;
+    display: flex;
+}
+.nav_sns li a{
+    display: block;
+    padding: 8px 12px;
+    color: #b9fb05;
+    font-size: 25px;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.nav_sns li a:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+.nav_toggleBtn{
+    display: none;
+}
+
+/* 메인 컨텐츠 영역 */
+.mainVideo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+.mainVideo video{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.mainTxt{
+    position: absolute;
+    top: 35%;
+    right: 60px;
+    user-select: none;
+}
+.mainTxt .tit{
+    font-family: Monoton;
+    font-size: 11.25rem;
+    color: #b9fb05;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+.mainTxt .tit span{
+    font-family: play;
+    color: #fff;
+    font-size: 3.125rem;
+}
+.mainTxt .txt{
+    font-family: play;
+    font-size: 2.125rem;
+    color: #bbb;
+    letter-spacing: -1px;
+}
+.mainTxt .txt span{
+    font-family: arial;
+    font-weight: bold;
+    color: #b9fb05;
+    margin-left: 10px;
+}
+.sideCon{
+    position: absolute;
+    top: 0;
+    right: -800px;
+    width: 800px;
+    height: 100%;
+    background: rgb(17, 17, 17, .5);
+    transform: skewX(-40deg);
+    transition: all 1s;
+    /* display: none; */
+}
+.sideCon:hover{
+    right: -500px;
+    background: rgb(17, 17, 17, .8);
+}
+.sideCon:hover .innerCon{
+    left: 50px;
+}
+.sideCon .innerCon{
+    position: absolute;
+    left: 250px;
+    width: 500px;
+    height: 100%;
+    background: rgb(0, 0, 0, .5);
+    transition: all 0.5s;
+}
+.sideCon .innerCon ul{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    width: 400px;
+}
+.sideCon .innerCon ul li{
+    width: 100%;
+    margin-top: 1rem;
+}
+.sideCon .innerCon ul li p{
+    color: #a0bd50;
+    font-family: arial;
+}
+.sideCon .innerCon ul li a img{
+    width: 100%;
+    height: 95px;
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+.sideCon .innerCon ul li:hover a img{
+    opacity: 1;
+}
+
+/* 화살표 버튼 */
+.btnArrow{
+    position: absolute;
+    left: 100px;
+    bottom: 40px;
+    width: 150px;
+    height: 50px;
+    transform: skewX(40deg);
+}
+.sideCon:hover .btnArrow{
+    left: 700px;
+}
+.btnArrow i{
+    color: #b9fb05;
+    font-size: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    animation:arrow linear 2.4s infinite;
+}
+@keyframes arrow{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: 150px;
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+.btnArrow i:nth-child(2){
+    animation-delay: 0.8s;
+}
+.btnArrow i:nth-child(3){
+    animation-delay: 1.6s;
+}
+
+
+/* 미디어쿼리 */
+@media (max-aspect-ratio: 16/9) {
+    #header{
+        left: -600px;
+    }
+    .mainVideo video{
+        width: auto;
+        height: 100vh;
+    }
+    .nav_logo{
+        left: 670px;
+    }
+}
+/* 태블릿 : 0 ~ 768px */
+@media (max-width: 768px){
+    .nav_sns{
+        display: block;
+    }
+    .mainTxt .tit{
+        font-size: 7.875rem;
+    }
+    .mainTxt .tit span{
+        font-size: 1.875rem;
+    }
+    .mainTxt .txt{
+        font-size: 1.45rem;
+    }
+}
+/* 모바일 : 0 ~ 480px */
+@media (max-width: 480px){
+    #header{
+        left: 0;
+        width: 100vw;
+        height: 90px;
+        background: linear-gradient(to bottom, #e6fc55, #b9fb05, #97e031);
+        transform: none;
+        overflow: hidden;
+    }
+    #header.show{
+        height: 100%;
+    }
+    .nav_logo{
+        top: 28px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .nav_logo a img{
+        width: 90px;
+    }
+    .nav_toggleBtn{
+        display: block;
+        padding: 1rem;
+        position: absolute;
+        top: 20px;
+        left: 16px;
+        text-align: center;
+    }
+    .nav_toggleBtn i{
+        font-size: 1.2rem;
+    }
+    .nav_gnb{
+        top: 100px;
+        width: 100%;
+    }
+    .nav_gnb > li{
+        padding: 0.7rem 0;
+        text-align: center;
+        color: #000;
+    }
+    .nav_gnb > li:hover{
+        background: #000;
+        color: #fff;
+    }
+    .nav_gnb > li a em{
+        transform: none;
+        margin: 0 auto;
+    }
+    .nav_gnb > li .sub{
+        position: initial;
+        top: 40px;
+        left: 0;
+        opacity: 1;
+    }
+    .nav_gnb > li .sub li a{
+        width: 100%;
+        padding: 0;
+        display: none;
+    }
+    .nav_gnb > li .sub.show li a{
+        display: flex;
+    }
+    .nav_sns{
+        display: flex;
+        top: 65vh;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 240px;
+        display: none;
+    }
+    .nav_sns.show{
+        display: flex;
+    }
+    .nav_sns li a{
+        color: #000;
+        opacity: 1;
+    }
+    .mainTxt{
+        width: 240px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .mainTxt .tit{
+        font-size: 8rem;
+    }
+    .mainTxt .tit span{
+        font-size: 1.56rem;
+    }
+    .mainTxt .txt{
+        font-size: 1.4rem;
+    }
+    .sideCon{
+        display: none;
+    }
+    .btn_main{
+        padding: 18px 40px;
+        background: #b9fb05;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

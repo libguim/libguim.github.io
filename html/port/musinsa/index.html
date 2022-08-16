@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSINSA</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+        
+            // 네비게이션 메뉴 토글
+            $(".btn_allmenu").click(function(){
+                $(".nav").slideToggle(300);
+            });
+
+            // 팝업배너닫기
+            $(".btn_close").click(function(){
+                $(".area_pop").hide();
+            });
+
+            // 검색창
+            $(".area_srch > i").click(function(){
+                $(".box_srch").toggleClass("active");
+            });
+
+            // SNS
+            $(".btn_sns_toggle").click(function(){
+                $(".box_sns ul").slideToggle();
+            });
+
+
+
+        });
+    </script>
+</head>
+<body>
+    <!-- #wrap -->
+    <div id="wrap">
+
+        <div class="area_pop">
+            <div class="contents">
+                <p class="pop_tit">#티셔츠대전 #신학기시작 #새내기개강룩</p>
+                <a href="#" class="btn_close"><i class="fas fa-times"></i></a>
+            </div>
+        </div>
+
+        <header id="header">
+            <div class="contents">
+                <button type="button" class="btn_allmenu"><i class="fas fa-bars"></i></button>
+                <h1><a href="">MUSINSA</a></h1>
+                <div class="area_srch">
+                    <i class="fas fa-search"></i>
+                    <div class="box_srch box_shadow">
+                        <input type="search" id="inputClose" maxlength="60" placeholder="검색어 입력">
+                        </input>
+                    </div>
+                </div>
+                <nav class="nav box_shadow">
+                    <div class="area_menu">
+                        <ul>
+                            <li><a href="">BEST</a></li>
+                            <li><a href="">Top 상의</a></li>
+                            <li><a href="">Outer 아우터</a></li>
+                            <li><a href="">Onepiece 원피스</a></li>
+                            <li><a href="">Bottom 하의</a></li>
+                            <li><a href="">Bag 가방</a></li>
+                            <li><a href="">Sneaker 스니커</a></li>
+                            <li><a href="">Shoes 신발</a></li>
+                            <li><a href="">Watch 시계</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Headwear 모자</a></li>
+                            <li><a href="">Sports/Goods 스포츠/용품</a></li>
+                            <li><a href="">Leg/Underwear 레그웨어/속옷</a></li>
+                            <li><a href="">Eyewear 안경</a></li>
+                            <li><a href="">Accessory 액세서리</a></li>
+                            <li><a href="">Digital/Tech 디지털/테크</a></li>
+                            <li><a href="">Life 생활/취미/미술</a></li>
+                            <li><a href="">Cosmetic 코스메틱</a></li>
+                            <li><a href="">Pet 반려동물</a></li>
+                            <li><a href="">Culture 책/음악/티켓</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main_con">
+            <div class="contents">
+                <div class="box_maintxt">
+                    <h3 class="subtxt1">new style guide</h3>
+                    <h2 class="subtxt2">life style select shop</h2>
+                    <button type="button" class="btn_more box_shadow">
+                        <span class="plus">VIEW MORE</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <article id="container">
+            <!-- 카테고리 -->
+            <section class="section01 section_padding">
+                <div class="contents">
+                    <h3 class="txt_serif">#개강준비 #무신사랑 해</h3>
+                    <div class="box_category">
+                        <figure>
+                            <a href="">
+                                <figcaption><p>WOMAN</p></figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <figcaption><p>MAN</p></figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <figcaption><p>SHOES</p></figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <figcaption><p>ACC</p></figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <figcaption><p>SPORTS</p></figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- *카테고리 -->
+            <!-- 온라인상품 -->
+            <section class="section02 section_padding">
+                <div class="contents">
+                    <div class="box_online">
+                        <div class="left">
+                            <figure>
+                                <!-- 첫번째 이미지 -->
+                            </figure>
+                            <figure>
+                                <!-- 두번째 이미지 -->
+                            </figure>
+                        </div>
+                        <div class="right">
+                            <p class="tit">ON-LINE <br>
+                                EXCLUSIVE <br>
+                                <span>
+                                온라인에만 있는 <br>
+                                특별한 상품
+                                </span>
+                            </p>
+                            <p class="txt">
+                                LIVE FIT <br>
+                                <span>2021. 02. 01. 18:30</span>
+                            </p>
+                            <button type="button" class="btn_more box_shadow">
+                                <span class="plus">VIEW MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- *온라인상품 -->
+            <!-- 매거진뉴스 -->
+            <section class="section03 section_padding">
+                <div class="contents">
+                    <h3>Magazine & News</h3>
+                    <div class="box_news">
+                        <figure>
+                            <a href="">
+                                <div>
+                                    <!-- 첫번째 이미지 -->
+                                </div>
+                                <figcaption>
+                                    <p class="tit">엔비에이로 1분 만에 완성하는 상큼 톤온톤 코디</p>
+                                    <span class="date">1일 전 | 826 |  엔비에이</span>
+                                    <div class="con">
+                                        트렌디한 톤온톤 스타일 제안하는 
+                                        NBA 플레이 라인 발매
+                                        부드럽고 상큼한 파스텔 컬러, 미니멀 디자인 돋보여
+                                        같은 톤의 티셔츠, 팬츠로 화사하고 깔끔한 스타일링 제안
+                                    </div>
+                                    <p class="writer">무신사 매거진</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <div>
+                                    <!-- 두번째 이미지 -->
+                                </div>
+                                <figcaption>
+                                    <p class="tit">눈길이 머무는 컬러, 널디 21 S/S 컬렉션 발매</p>
+                                    <span class="date">1일 전 | 999 |  널디</span>
+                                    <div class="con">
+                                        대세 브랜드 널디가 21 S/S 컬렉션 신상품을 발매하고 최대 10% 할인한다. 
+                                        널디를 상징하는 트렌디한 로고와 파스텔 톤 컬러를 입혀 상큼함이 가득하다. 
+                                        이번 21 S/S 컬렉션은 가볍고 편안하면서 
+                                        외출복과 홈 웨어의 경계가 없는 원 마일 웨어 룩으로도 제격이다. 
+                                        셋업으로 입기 좋은 트랙 탑과 하프 팬츠에는 스트라이프와 로고 테이프로 포인트를 줬고, 
+                                        여기에 함께 메면 좋을 슬링 백, 메신저 백 등도 눈에 띈다. 
+                                    </div>
+                                    <p class="writer">무신사 매거진</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <div>
+                                    <!-- 세번째 이미지 -->
+                                </div>
+                                <figcaption>
+                                    <p class="tit">달콤한 컬러의 론론(RONRON) 스웨트셔츠 단독 
+                                        최대 43% 할인 시즌오프 </p>
+                                    <span class="date">2일 전 | 826 |  론론</span>
+                                    <div class="con">
+                                        일상 속 작은 행복을 전하는 브랜드, 
+                                        론론(RONRON)이 우신사 단독 시즌 오프를 진행한다. 
+                                        최대 43% 할인과 함께 하는 이번 시즌 오프에서는 
+                                        론론만의 달콤한 컬러가 돋보이는 스웨트셔츠, 후디 등을 비롯한 
+                                        다양한 아이템을 만날 수 있다. 
+                                        론론 시즌 오프를 통해 점찍어 두었던 아이템을 기분 좋은 가격에 만나보자.
+                                    </div>
+                                    <p class="writer">무신사 매거진</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- *매거진뉴스 -->
+            <!-- 스냅 -->
+            <section class="section04 section_padding">
+                <div class="contents">
+                    <h3>STREET & STAFF SNAP</h3>
+                    <div class="box_snap">
+                        <figure class="box_shadow">
+                            <a href="">
+                                <div></div>
+                                <figcaption>
+                                    <div class="left">
+                                        <p>홍대/신촌</p>
+                                        <p>차현기(27)</p>
+                                    </div>
+                                    <div class="right">
+                                        <p>20-12-09 | 55</p>
+                                        <p>리포터 : 박철현</p>
+                                    </div>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="box_shadow">
+                            <a href="">
+                                <div></div>
+                                <figcaption>
+                                    <div class="left">
+                                        <p>홍대/신촌</p>
+                                        <p>한예은(20)</p>
+                                    </div>
+                                    <div class="right">
+                                        <p>20-12-09 | 55</p>
+                                        <p>리포터 : 박철현</p>
+                                    </div>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="box_shadow">
+                            <a href="">
+                                <div></div>
+                                <figcaption>
+                                    <div class="left">
+                                        <p>신사/압구정</p>
+                                        <p>차아영(20)</p>
+                                    </div>
+                                    <div class="right">
+                                        <p>20-12-09 | 55</p>
+                                        <p>리포터 : 박철현</p>
+                                    </div>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="box_shadow">
+                            <a href="">
+                                <div></div>
+                                <figcaption>
+                                    <div class="left">
+                                        <p>홍대/신촌</p>
+                                        <p>최효준(25)</p>
+                                    </div>
+                                    <div class="right">
+                                        <p>20-12-09 | 55</p>
+                                        <p>리포터 : 박철현</p>
+                                    </div>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="box_shadow">
+                            <a href="">
+                                <div></div>
+                                <figcaption>
+                                    <div class="left">
+                                        <p>홍대/신촌</p>
+                                        <p>임세라(23)</p>
+                                    </div>
+                                    <div class="right">
+                                        <p>20-12-09 | 55</p>
+                                        <p>리포터 : 박철현</p>
+                                    </div>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="box_shadow">
+                            <a href="">
+                                <div></div>
+                                <figcaption>
+                                    <div class="left">
+                                        <p>부산/경남</p>
+                                        <p>김형우(26)</p>
+                                    </div>
+                                    <div class="right">
+                                        <p>20-12-09 | 55</p>
+                                        <p>리포터 : 박철현</p>
+                                    </div>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="box_shadow">
+                            <a href="">
+                                <div></div>
+                                <figcaption>
+                                    <div class="left">
+                                        <p>홍대/신촌</p>
+                                        <p>서주현(25)</p>
+                                    </div>
+                                    <div class="right">
+                                        <p>20-12-09 | 55</p>
+                                        <p>리포터 : 박철현</p>
+                                    </div>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="box_shadow">
+                            <a href="">
+                                <div></div>
+                                <figcaption>
+                                    <div class="left">
+                                        <p>동대문</p>
+                                        <p>박매리(23)</p>
+                                    </div>
+                                    <div class="right">
+                                        <p>20-12-09 | 55</p>
+                                        <p>리포터 : 박철현</p>
+                                    </div>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                    <button type="button" class="btn_more box_shadow">
+                        <span class="plus">VIEW MORE</span>
+                    </button>
+                </div>
+            </section>
+            <!-- *스냅 -->
+        </article>
+
+        <footer id="footer">
+            <div class="footer_top">
+                <div class="contents">
+                    <div class="area_auth">
+                        <p class="tit">100% AUTHENTIC</p>
+                        <p class="con">무신사 스토어에서 판매되는 모든 브랜드 제품은 정식제조, 정식수입원을 통해 유통되는 100% 정품임을 보증합니다.</p>
+                    </div>
+                    <div class="footer_nav">
+                        <ul>
+                            <li><a href="">회사소개</a></li>
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="">무신사 편집팀</a></li>
+                            <li><a href="">무신사 스토어</a></li>
+                            <li><a href="">입점/제휴 문의</a></li>
+                            <li><a href="">개인정보처리방침</a></li>
+                            <li><a href="">이용약관</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_btm">
+                <div class="contents">
+                    <h1><a href="">MUSINSA</a></h1>
+                    <div class="inner">
+                        <div class="left">
+                            <p class="tel">1544-7199</p>
+                            <p class="time">
+                                9AM ~ 6PM (토,일,공휴일 휴무)
+                            </p>
+                            <p class="txt">                            
+                                1번 : 배송 | 교환 | 환불 <br>
+                                2번 : 결제 | 회원 관련 <br>
+                                3번 : 상품 문의
+                            </p>
+                        </div>
+                        <div class="right">
+                            <address>
+                                주식회사 무신사 (MUSINSA Co., Ltd.) | 서울특별시 강남구 신사동 640-2 로빈명품관 지하1층 | 사업자등록번호 : 211-88-79575 |
+                                통신판매업 : 2012-서울강남-01897 | 대표 : 조만호 | 개인정보관리책임자 : 이진우(help@musinsa.com) ｜ 호스팅사업자 : (주)무신사
+                            </address>
+                            <p class="copyright">COPYRIGHT (C) MUSINSA ALL RIGHTS RESERVED.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="box_sns">
+            <ul>
+                <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <button type="button" class="btn_sns_toggle">
+                <span class="btn_plus"></span>
+            </button>
+        </div>
+
+    </div>
+    <!-- #wrap -->
+</body>
+</html>

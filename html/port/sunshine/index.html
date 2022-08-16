@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Dive</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/cssanimation.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+
+            $('article').on('mouseover', function () {
+                //콜백함수란? 매개변수의 자리에 들어간 함수
+
+                $(this).stop().animate({
+                    'width': '35%'
+                }, 700, function () {
+
+                    $(this).find('h3').stop().animate({
+                        'right': '10px'
+                    }, 500);
+
+                    $(this).find('.innerCon').stop().animate({
+                        'right': '10px'
+                    }, 900);
+
+                }); //article애니메이트
+
+
+
+                $(this).find('video').stop().animate({
+                    'opacity': 0.9
+                }, 1200); //비디오 투명도 애니메이트
+
+                var vid = $(this).find('video').get(0);
+
+                vid.currentTime = 0; //비디오 현재시간 리셋
+                vid.play(); //비디오 플레이
+
+            }); //마우스 올렸을 때
+
+
+            $('article').on('mouseout', function () {
+
+                $(this).stop().animate({
+                    'width': '12%'
+                }, 700, function () {
+
+                    $(this).find('h3').stop().animate({
+                        'right': '-121px'
+                    }, 500);
+
+                    $(this).find('.innerCon').stop().animate({
+                        'right': '-301px'
+                    }, 900);
+
+                }); //article애니메이트
+
+
+
+                $(this).find('video').stop().animate({
+                    'opacity': 0
+                }, 2000); //비디오
+
+                var vid = $(this).find('video').get(0);
+                vid.pause();
+
+            }); //마우스 내렸을 때 
+
+
+        }) //opening
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <div class="mainLogo"
+            style="animation-fill-mode: both; visibility: visible; animation-duration: 1s; animation-name: blurInRight;">
+            <h1><a href="">
+                <img src="img/logo_white.png" alt="logo">
+                <p>SUNSHINE DIVE <br>
+                    <span>in Gili Trawangan</span>
+                </p>
+                <!-- <p>Technical Diving Centre</p> -->
+            </a></h1>
+        </div>
+
+        <main class="contents">
+            <article>
+                <h2>SNS</h2>
+                <video loop muted preload="auto">
+                    <source src="img/video_4.mp4" type="video/mp4">
+                </video>
+                <!--video-->
+                <div class="afterShow"></div>
+                <!--나중에 나올 div-->
+                <h3>SNS</h3>
+                <div class="innerCon">
+                    <ul class="snsList">
+                        <li><img src="img/sns01.jpg"></li>
+                        <li><img src="img/sns02.jpg"></li>
+                        <li><img src="img/sns03.jpg"></li>
+                        <li><img src="img/sns04.jpg"></li>
+                        <li><img src="img/sns05.jpg"></li>
+                        <li><img src="img/sns06.jpg"></li>
+                        <li><img src="img/sns07.jpg"></li>
+                        <li><img src="img/sns08.jpg"></li>
+                        <li><img src="img/sns09.jpg"></li>
+                        <li><img src="img/sns10.jpg"></li>
+                        <li><img src="img/sns11.jpg"></li>
+                        <li><img src="img/sns12.jpg"></li>
+                        <li><img src="img/sns13.jpg"></li>
+                        <li><img src="img/sns14.jpg"></li>
+                        <li><img src="img/sns15.jpg"></li>
+                    </ul>     
+                </div>
+            </article>
+
+            <article>
+                <h2>Dive Sites</h2>
+                <video loop muted preload="auto">
+                    <source src="img/video_3.mp4" type="video/mp4">
+                </video>
+                <!--video-->
+                <div class="afterShow"></div>
+                <!--나중에 나올 div-->
+                <h3>Dive Sites</h3>
+                <div class="innerCon">
+                    <p class="diveImg"></p>
+                </div>
+            </article> 
+                        
+            <article>
+                <h2>Program</h2>
+                <video loop muted preload="auto">
+                    <source src="img/video_2.mp4" type="video/mp4">
+                </video>
+                <!--video-->
+                <div class="afterShow"></div>
+                <!--나중에 나올 div-->
+                <h3>Program</h3>
+                <div class="innerCon">
+                    <p>프로그램은 크게 일반코스와 자격증코스로 나뉩니다.
+                        일반코스는 자격증 없이 다이빙 초보도 쉽게 즐길 수 있는
+                        체험다이빙과
+                        오픈워터 이상의 자격증이 있는 다이버가 즐기는
+                        펀다이빙이 있습니다. 자격증코스는
+                        오픈워터, 어드밴스드, 레스큐, 다이브마스터, 스페셜티 등이 있습니다.</p>
+                </div>
+            </article>
+
+            <article>
+                <h2>About Us</h2>
+                <video loop muted preload="auto">
+                    <source src="img/video_1.mp4" type="video/mp4">
+                </video>
+                <!--video-->
+                <div class="afterShow"></div>
+                <!--나중에 나올 div-->
+                <h3>About Us</h3>
+                <div class="innerCon">
+                    <p>SUNSHINE DIVE는 인도네시아 유일의 한인 PADI 다이빙 센터입니다!
+                        호주 케언즈의 강사 활동 경력과 교육 다이빙으로 유명한 태국 꼬따오에서의 경력 등
+                        풍부한 강사 경험을 가진 강사들이 여러분들을 기다리고 있습니다.
+                        체험다이빙부터 펀다이빙과 자격증 코스 그리고 프로다이버의 세계까지!
+                        안전하고 즐겁게 여러분을 길리의 멋진 바닷속으로 초대합니다.</p>
+                </div>
+            </article>
+        </main>
+
+    </div>
+</body>
+</html>

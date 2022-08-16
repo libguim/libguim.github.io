@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NIKE</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(".nav_toggleBtn").click(function(e){
+                e.preventDefault();
+                $("#header").toggleClass("show");
+                $(".nav_sns").toggleClass("show");
+            });
+
+            // $(".nav_gnb > li").mouseenter(function(e){
+            //     e.preventDefault();
+            //     var target = $(this);
+            //     target.find(".sub").toggleClass("show");
+            //     target.siblings().find(".sub").removeClass("show");
+            // });
+
+            // $(".nav_gnb > li").mouseleave(function(e){
+            //     e.preventDefault();
+            //     var target = $(this);
+            //     target.find(".sub").removeClass("show");
+            // });
+
+
+        });
+    </script>
+</head>
+<body>
+
+    <header id="header">
+
+        <!-- mainLogo -->
+        <h1 class="nav_logo"><a href=""><img src="img/logo.png" alt="Nike Logo"></a></h1>  
+        <!-- *mainLogo -->
+
+        <!-- gnb -->
+        <ul class="nav_gnb">
+            <li><a href=""><em>
+                <i class="fas fa-sync-alt fa-spin"></i>
+                 &nbsp; About NIKE</em></a>
+                
+                <ul class="sub">
+                    <li><a href=""><em>NIKE</em></a></li>
+                </ul>
+
+            </li>
+            <li><a href=""><em>Brand Info</em></a>
+                
+                <ul class="sub">
+                    <li><a href=""><em>NIKE Info</em></a></li>
+                </ul>
+                
+            </li> 
+            <li><a href=""><em>Community</em></a>
+                
+                <ul class="sub">
+                    <li><a href=""><em>NIKE </em></a></li>
+                </ul>
+                
+            </li> 
+            <li><a href=""><em>Product Value</em></a>
+                
+                <ul class="sub">
+                    <li><a href=""><em>Quality</em></a></li>
+                </ul>
+                
+            </li>   
+            <li><a href=""><em>Company History</em></a>
+                
+                <ul class="sub">
+                    <li><a href=""><em>Story</em></a></li>
+                </ul>
+                
+            </li>
+        </ul>
+        <!-- *gnb --> 
+
+        <!-- btn_nav -->
+        <a href="" class="nav_toggleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+        <!-- *btn_nav -->
+
+    </header>
+
+    <!-- sns -->
+    <ul class="nav_sns">
+        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>    
+        <li><a href=""><i class="fab fa-twitter"></i></a></li>    
+        <li><a href=""><i class="fab fa-youtube"></i></a></li>    
+        <li><a href=""><i class="fab fa-android"></i></a></li>    
+        <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>    
+    </ul>
+    <!-- *sns --> 
+
+    <main id="contents">
+        <article>
+            <!-- vid -->
+            <div class="mainVideo">
+                <video loop autoplay muted poster="img/dfdf.png">
+                <source src="img/nike.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- *vid -->
+        </article>
+        <article>
+            <!-- mainTxt -->
+            <div class="mainTxt">
+                <p class="tit">50<span>/ 24</span></p>
+                <p class="txt">Best Qualified <span>AIR MAX</span></p>
+            </div>
+            <!-- *mainTxt --> 
+            <button type="button" class="btn_main">VIEW MORE</button>       
+        </article>
+        <article>
+            <!-- sideCon -->
+            <section class="sideCon">
+                <div class="innerCon">
+                    <ul>
+                        <li>
+                            <p>Event &amp; Community</p>
+                            <a href=""><img src="img/1.png"></a>
+                        </li><!--첫번재 li-->
+                        
+                        <li>
+                            <p>News &amp; Notice</p>
+                            <a href=""><img src="img/2.png"></a>
+                        </li><!--두번째 li-->
+                        
+                        <li>
+                            <p>Product Review</p>
+                            <a href=""><img src="img/3.png"></a>
+                        </li><!--세번째 li-->
+                    </ul>
+                </div><!--con-->
+            
+                <div class="btnArrow">
+                    <i class="fas fa-angle-double-left"></i>
+                    <i class="fas fa-angle-double-left"></i>
+                    <i class="fas fa-angle-double-left"></i>
+                </div><!--btnArrow-->
+            </section>
+            <!-- *sideCon -->
+        </article>
+    </main>
+
+</body>
+</html>

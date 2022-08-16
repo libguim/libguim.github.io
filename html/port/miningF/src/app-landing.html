@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Farming App">
+    <meta name="keywords" content="Farming App" />
+    <title>Landing-Farming</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Finapp/HTML/assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Finapp/HTML/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../Finapp/HTML/assets/img/favicon.png" sizes="32x32">
+    <link rel="shortcut icon" href="../Finapp/HTML/assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../css/custom_sofia.css">
+    <!-- Jquery -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/popper.min.js"></script>
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type= "text/javascript" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- Base Js File -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/base.js"></script>
+</head>
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <img src="../Finapp/HTML/assets/img/logo-icon.png" alt="icon" class="loading-icon">
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="#" class="headerButton" data-toggle="modal" data-target="#sidebarPanel">
+                <span class="material-icons">
+                    menu
+                </span>
+            </a>
+        </div>
+        <div class="pageTitle">
+            <img src="../img/logo_wh.png">
+        </div>
+        <div class="right">
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <!-- Wallet Card -->
+        <div class="section wallet-card-section pt-1">
+            <div class="wallet-card">
+                <p class="title text-dark">Total Balance</p>
+                <!-- Balance -->
+                <div class="balance" style="height: 65px;">
+                    <div class="left">
+                        <div>
+                            <h1 class="total">2,222.5 USD</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- * Balance -->
+            </div>
+        </div>
+        <!-- Wallet Card -->
+
+        <!-- Farming -->
+        <div class="section mt-4">
+            <div class="section-heading">
+                <h2 class="title">나의 파밍</h2>
+            </div>
+            <div class="goals">
+                <!-- item -->
+                <a href="app-myfarming.html">
+                    <div class="item item-abled">
+                        <div class="in mt-2">
+                            <div>
+                                <div>전체 파밍</div>
+                                <div>오늘 수익</div>
+                            </div>
+                            <div class="mb-2">
+                                <div class="price">500 USD</div>
+                                <div class="price">500 USD</div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100">85%</div>
+                        </div>
+                        <div class="in mt-1">
+                            <div>
+                                <div>누적 수익</div>
+                            </div>
+                            <div>
+                                <div class="price">500 / 500</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- * item -->
+
+                <small>매일 12:00:00에 데이터가 업데이트 됩니다.</small>
+            </div>
+        </div>
+        <!-- * Farming -->
+
+        <!-- Transactions -->
+        <div class="section mt-4 mb-4">
+            <div class="section-heading">
+                <h2 class="title">나의 자산현황</h2>
+            </div>
+            <div class="transactions">
+                <!-- item -->
+                <a href="app-wallet.html" class="item">
+                    <div class="detail">
+                        <div class="mr-1">
+                            <img src="../img/commi.png" alt="commission">
+                        </div>
+                        <div>
+                            <strong>커미션</strong>
+                            <p>USD</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="price text-danger text-right">23.00</div>
+                        <div class="price text-dark text-right">= 0 USD</div>
+                    </div>
+                </a>
+                <!-- * item -->
+                <!-- item -->
+                <a href="app-wallet.html" class="item">
+                    <div class="detail">
+                        <div class="mr-1">
+                            <img src="../img/bitcoin.png" alt="bitcoin">
+                        </div>
+                        <div>
+                            <strong>비트코인</strong>
+                            <p>BTC</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="price text-danger text-right">23.00</div>
+                        <div class="price text-dark text-right">= 0 USD</div>
+                    </div>
+                </a>
+                <!-- * item -->
+                <!-- item -->
+                <a href="app-wallet.html" class="item">
+                    <div class="detail">
+                        <div class="mr-1">
+                            <img src="../img/tron.png" alt="tron">
+                        </div>
+                        <div>
+                            <strong>트론</strong>
+                            <p>TRX</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="price text-danger text-right">23.00</div>
+                        <div class="price text-dark text-right">= 0 USD</div>
+                    </div>
+                </a>
+                <!-- * item -->
+        </div>
+        <!-- * Transactions -->
+
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Sidebar -->
+    <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <!-- profile box -->
+                    <div class="profileBox pt-2 pb-2">
+                        <a href="#" class="btn btn-link btn-icon" data-dismiss="modal">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </a>
+                        <h2 class="m-0"> 메뉴</h2>
+                    </div>
+                    <!-- * profile box -->
+
+                    <!-- menu -->
+                    <ul class="listview flush transparent no-line image-listview">
+                        <li>
+                            <a href="app-buygoods.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <span class="material-icons">
+                                        shopping_cart
+                                    </span>
+                                </div>
+                                <div class="in">
+                                    상품 구매
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-myinfo.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <span class="material-icons">
+                                        settings
+                                    </span>
+                                </div>
+                                <div class="in">
+                                    내 정보
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-notice.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <span class="material-icons">
+                                        campaign
+                                        </span>
+                                </div>
+                                <div class="in">
+                                    공지사항
+                                    <span class="badge badge-primary">10</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-version.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <span class="material-icons">
+                                        apps
+                                    </span>
+                                </div>
+                                <div class="in">
+                                    앱 정보
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- * menu -->
+
+                    <!-- footer box -->
+                    <div class="footerBox">
+                        <a href="#" class="btn btn-link btn-icon" data-dismiss="modal">
+                            로그아웃&nbsp;
+                            <span class="material-icons">
+                            logout
+                            </span>
+                        </a>
+                    </div>
+                    <!-- * footer box -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- * App Sidebar -->
+
+
+</body>
+</html>

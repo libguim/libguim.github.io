@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Farming App">
+    <meta name="keywords" content="Farming App" />
+    <title>BuyDetails-Farming</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Finapp/HTML/assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Finapp/HTML/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../Finapp/HTML/assets/img/favicon.png" sizes="32x32">
+    <link rel="shortcut icon" href="../Finapp/HTML/assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../css/custom_sofia.css">
+    <!-- Jquery -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/popper.min.js"></script>
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type= "text/javascript" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- Base Js File -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/base.js"></script>
+</head>
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <img src="../Finapp/HTML/assets/img/logo-icon.png" alt="icon" class="loading-icon">
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="#" class="headerButton" data-toggle="modal" data-target="#sidebarPanel">
+                <span class="material-icons">
+                arrow_back_ios
+                </span>
+            </a>
+        </div>
+        <div class="pageTitle">
+            구매하기
+        </div>
+        <div class="right">
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <!-- Wallet Card -->
+        <div class="section wallet-card-section pt-1">
+            <div class="wallet-card">
+
+                <!-- Custom select -->
+                <form>
+                    <select class="custom-select">
+                      <option selected>결제할 코인을 선택하세요</option>
+                      <option value="bitcoin">비트코인</option>
+                      <option value="tron">트론</option>
+                    </select>
+                </form>
+                <!-- * Custom select -->
+
+                <!-- Balance -->
+                <div class="balance">
+                    <div class="left">
+                        <small class="title text-dark">현재 잔액</small>
+                        <div>
+                            <h1 class="total">2,222.5 USD</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- * Balance -->
+            </div>
+        </div>
+        <!-- Wallet Card -->
+
+        <!-- Select Coin -->
+        <div class="section mt-2 mb-5">
+            <div class="card">
+
+                <div class="card-body mt-2">
+                    <!-- 비트코인 정보 -->
+                    <div class="text-center">
+                        <img src="../img/bitcoin@2.png" alt="img" class="image-block imaged mb-2">
+                        <h1 class="text-primary"> + 70%</h1>
+                        <h1 class="text-dark">5,000 USD</h1>
+                        <h2 class="text-secondary"> = 0.0000 BTC</h2>
+                        <h4 class="mt-3 mb-3">결제 후 잔액 : <span class="text-primary">000000</span> USD</h4>
+                        <small>2021.01.01 - 2021.02.21 <br> 365 Days 파밍</small>
+                    </div>
+                    <!-- * 비트코인 정보 -->
+
+                    <!-- 트론 정보 -->
+                    <div class="text-center" style="display: none;">
+                        <img src="../Finapp/HTML/assets/img/sample/brand/1.jpg" alt="img" class="image-block imaged w48 mb-2">
+                        <h1 class="text-primary"> + 70%</h1>
+                        <h4>5,000 USD</h4>
+                        <p> = 0.0000 BTC</p>
+                        <small>2021.01.01 - 2021.02.21 <br> 365 Days 파밍</small>
+                    </div>
+                    <!-- * 트론 정보 -->
+
+                </div>
+
+            </div>
+        </div>
+        <!-- * Select Coin -->
+
+        <div class="form-button-group form-button-set transparent mt-3">
+            <button type="submit" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#DialogIconedSuccess">취소</button>
+            <button type="submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#DialogIconedButtonInline">구매</button>
+        </div>
+
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- Modal - 구매 -->
+    <div class="modal fade dialogbox" id="DialogIconedButtonInline" data-backdrop="static" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header p-3">
+                    <h5 class="modal-title">
+                        결제 후 잔액은<br><b class="text-primary">000000</b> USD 입니다.
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title mb-5">
+                        구매를 확정하시겠습니까?
+                    </h5>
+                    <div class="custom-control custom-checkbox mt-1 mb-1 text-left">
+                        <input type="checkbox" class="custom-control-input" id="customChecka1">
+                        <label class="custom-control-label" for="customChecka1">
+                            <a href="#" data-toggle="modal" data-target="#termsModal">약관동의</a>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="2" cols="30">At w3schools.com you will learn how to make a website.</textarea>
+                    </div>
+                    <div class="custom-control custom-checkbox mt-1 mb-1 text-left">
+                        <input type="checkbox" class="custom-control-input" id="customChecka2">
+                        <label class="custom-control-label" for="customChecka2">
+                            <a href="#" data-toggle="modal" data-target="#termsModal">약관동의</a>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="2" cols="30">At w3schools.com you will learn how to make a website.</textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-inline">
+                        <a href="#" class="btn btn-text-muted" data-dismiss="modal">
+                            아니오
+                        </a>
+                        <a href="#" class="btn btn-text-primary" data-dismiss="modal">
+                            네
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- * Modal - 구매 -->
+
+    <!-- Modal - 잔액부족 -->
+    <div class="modal fade dialogbox" id="DialogIconedInfo" data-backdrop="static" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-icon" size="large">
+                    <span class="material-icons md-48">
+                    error_outline
+                    </span>
+                </div>
+                <div class="modal-header">
+                    <h5 class="modal-title">잔액이 부족합니다.</h5>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-inline">
+                        <a href="#" class="btn" data-dismiss="modal">확인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- * Modal - 잔액부족 -->
+
+
+</body>
+</html>

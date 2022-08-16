@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Farming App" />
+    <meta name="keywords" content="Farming App" />
+    <title>MainWeb-Farming</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Finapp/HTML/assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Finapp/HTML/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../Finapp/HTML/assets/img/favicon.png" sizes="32x32">
+    <link rel="shortcut icon" href="../Finapp/HTML/assets/img/favicon.png">
+    <link rel="stylesheet" href="../css/custom_sofia.css">
+    <!-- Jquery -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/popper.min.js"></script>
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type= "text/javascript" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- Base Js File -->
+    <script type= "text/javascript" src="../Finapp/HTML/assets/js/base.js"></script>
+    <style>
+        @media (max-width: 500px) {
+            .section-right {
+                padding-top: 10%;
+            }
+            #appCapsule img{
+                margin-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <img src="../Finapp/HTML/assets/img/logo-icon.png" alt="icon" class="loading-icon">
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary">
+        <div class="left">
+            <a href="web-main.html"><h2 class="text-light mb-0">CI</h2></a>
+        </div>
+
+        <div class="right">
+            <button type="button" class="btn btn-secondary" style="margin-right: .3rem;" onClick="location.href='app-register.html'">회원가입</button>
+            <button type="button" class="btn btn-secondary" onClick="location.href='app-login.html'">로그인</button>
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <div class="row">
+
+            <div class="col-sm-6 col-md-7 col-lg-7 section text-center section-left">
+                <img src="../img/smart.png" alt="image" class="imaged w-100 rounded">
+            </div>
+    
+            <div class="col-sm-6 col-md-5 col-lg-5 section text-center section-right">
+                <h2>스마트폰에서</h2>
+                <h2>가장 빠르게 만나볼 수 있습니다.</h2>
+    
+                <div class="card-body text-center" style="width: 70%; margin: 0 auto;">
+                    <button type="button" class="btn btn-primary btn-block rounded"><ion-icon name="logo-apple"></ion-icon>ios 다운로드</button>
+                    <button type="button" class="btn btn-primary btn-block rounded"><ion-icon name="logo-android"></ion-icon>android 다운로드</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- * App Capsule -->
+
+</body>
+</html>
