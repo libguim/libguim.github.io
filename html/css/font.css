@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+
+/* 폰트 */
+@font-face{
+    font-family: 'Noto Sans KR';
+    src:url('../font/Noto_Sans_KR/NotoSans-Regular.eot'),
+    url('../font/Noto_Sans_KR/NotoSans-Regular.woff') format('woff'), 
+    url('../font/Noto_Sans_KR/NotoSans-Regular.woff2') format('woff2'); 
+    src:local(※);
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Open Sans';
+    src:url('../font/Open_Sans/OpenSans-Regular.eot'),
+    url('../font/Open_Sans/OpenSans-Regular.woff') format('woff'), 
+    url('../font/Open_Sans/OpenSans-Regular.woff2') format('woff2'); 
+    src:local(※);
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Roboto Mono';
+    src:url('../font/Roboto_Mono/RobotoMono-Regular.eot'),
+    url('../font/Roboto_Mono/RobotoMono-Regular.woff') format('woff'), 
+    url('../font/Roboto_Mono/RobotoMono-Regular.woff2') format('woff2'); 
+    src:local(※);
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Monoton';
+    src:url('../font/Monoton/Monoton-Regular.eot'),
+    url('../font/Monoton/Monoton-Regular.woff') format('woff'), 
+    url('../font/Monoton/Monoton-Regular.woff2') format('woff2'); 
+    src:local(※);
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&family=Open+Sans&family=Roboto+Mono:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap'); 
